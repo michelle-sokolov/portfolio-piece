@@ -9,10 +9,17 @@ import * as locations_data from '../locations.json';
 export class DetailsComponent implements OnInit {
 
 public details = locations_data;
+public currentId;
 
-  constructor() { }
+  constructor() {
+
+   }
 
   ngOnInit(): void {
+    this.getId();
+    console.log(this.details[this.currentId])
   }
-
+  getId() {
+    this.currentId = window.location.href.slice(34);
+  }
 }

@@ -4,8 +4,8 @@ import { DataTableComponent } from "./data-table/data-table.component";
 import {DetailsComponent} from './details/details.component';
 
 const routes: Routes = [
-  { path: 'app-details', component: DetailsComponent },
-  { path: 'app-data-table', component: DataTableComponent }
+  { path: 'app-data-table', component: DataTableComponent },
+  { path: 'app-details/:id', component: DetailsComponent },
 ];
 
 @NgModule({

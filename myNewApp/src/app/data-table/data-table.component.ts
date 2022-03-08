@@ -12,6 +12,7 @@ export class DataTableComponent implements OnInit {
   public rows = Object.values(locations_data);
   public selected = [];
   public SelectionType = SelectionType;
+  public temp = [] as  any;
   public columns = [
     { name: 'City', prop: 'location_city' },
     { name: 'Country', prop: 'location_country' },
@@ -25,15 +26,12 @@ export class DataTableComponent implements OnInit {
   onSelect({ selected }) {
     console.log('Select Event', selected);
     console.log(selected[0].id)
+    const url = "http://localhost:4200/app-details/" + selected[0].id;  
+    window.location.href = url;
   }  
 ngOnInit() {
 }
 constructor() { 
-  console.log(this.rows)
-  console.log(Object.values(locations_data)) 
 }
 
-onUserEvent() {
-  console.log();
-} 
 }
