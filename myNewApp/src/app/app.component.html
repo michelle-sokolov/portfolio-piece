@@ -1,19 +1,129 @@
 <header>
-  <ul class="nav justify-content-end" style="background: black">
+  <!-- nav -->
+  <ul class="nav justify-content-center">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Active</a>
+      <a class="nav-link" href="#portfolio">Portfolio</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      <a class="nav-link" id="#about">About</a>
     </li>
   </ul>
 </header>
-<!--<li><a routerLink="/app-data-table" routerLinkActive="active">First </a></li>
-<li><a routerLink="/app-details" routerLinkActive="active">second </a></li>-->
+<!-- intro -->
+<div class="intro text-center">
+  <div class="container">
+    <img class="avatar" src="https://imgur.com/SLY1DFe.jpg" alt="avatar-icon" />
+    <h1>MICHELLE SOKOLOV</h1>
+    <hr />
+    <h2>Full Stack Web Developer • Los Angeles</h2>
+    <hr />
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="mailto: michellersokolov@gmail.com"
+          >michellersokolov@gmail.com
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tel:+18186870704">(818)-687-0704</a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          target="_blank"
+          href="https://docs.google.com/document/d/1-QXX4BJ-E07hfGO4fMTNOKnu9HWXFWsB-3-hNx039ho/edit?usp=sharing"
+          >Resume</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          target="_blank"
+          href="https://github.com/michelle-sokolov"
+          >GitHub</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          target="_blank"
+          href="https://www.linkedin.com/in/michelle-sokolov-5a5a30a8/"
+          >LinkedIn</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- portfolio-->
+<div id="portfolio" class="portfolio container">
+  <h3 class="text-center">PORTFOLIO</h3>
+  <hr />
+  <div class="row">
+    <div class="col">
+      <div
+        class="portfolio-div"
+        style="background-image: url(https://imgur.com/TpHOqBa.jpg)"
+      >
+        <div class="text-center">
+          <a
+            href="https://coterieseniorliving.com"
+            class="portfolio-link"
+            target="_blank"
+            >+</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div
+        class="portfolio-div"
+        style="background-image: url(https://imgur.com/uiJsbLt.jpg)"
+      >
+        <div class="text-center">
+          <a href="atriaseniorliving.com" class="portfolio-link" target="_blank"
+            >+</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div
+        class="portfolio-div"
+        style="
+          background-image: url(https://media.giphy.com/media/js5UsZfWCGfJzELpxo/giphy.gif);
+        "
+      >
+        <div class="text-center">
+          <a
+            href="https://michelle-sokolov.github.io/weatherApp/"
+            class="portfolio-link"
+            target="_blank"
+            >+</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About -->
+<div id="about" class="about">
+  <div class="container">
+    <h3 class="text-center">ABOUT</h3>
+    <hr />
+    <div class="row">
+      <div class="col-5">
+        In 2019, I started my journey to become a full stack web developer. I
+        enrolled in UCLA Extension's bootcamp and learned the basics. I have
+        worked full time as a Junior Frontend Developer as of March, 2020.
+      </div>
+      <div class="col-5 offset-2">
+        I am skilled in HTML, CSS, SASS, SCSS, JavaScript, TypeScript, Node.js,
+        and databases (MongoDB and MySQL). I have worked with some of the most
+        popular frameworks like Angular, Vue, React, Bootstrap, Ionic, and
+        Express.
+      </div>
+    </div>
+  </div>
+</div>
+<!-- footer -->
+<footer></footer>
 <router-outlet></router-outlet>
